@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        .caixa {
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+
+        }
+        .caixa:hover {
+            background-color: blueviolet;
+            color: white;
+        }
+        div#main:hover {
+            color: blueviolet;
+        }
+        div#main > p {
+            display: none;
+        }
+        div#main:hover > p {
+            display: block;
+            color: white;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">01</div>
+    <div class="caixa">02</div>
+    <div class="caixa">03</div>
+    <h1>Exemplos de hover</h1>
+    <p>passe o mouse na frase abaixo:</p>
+    <div id="main">
+        passe o mouse aqui
+        <p>TEXTO ESCONDIDO!!</p>
+    </div>
+</body>
+</html>
